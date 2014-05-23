@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  content: MyText
+  item: MyString
+  purpose_type: MyString
+  purpose: MyString
+  place: MyString
+  ongoing: false
+  begin: 2013-08-25 05:22:42
+  end: 2013-08-25 05:22:42
+
+two:
+  content: MyText
+  item: MyString
+  purpose_type: MyString
+  purpose: MyString
+  place: MyString
+  ongoing: false
+  begin: 2013-08-25 05:22:42
+  end: 2013-08-25 05:22:42

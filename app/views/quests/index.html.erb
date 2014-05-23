@@ -1,0 +1,37 @@
+<h1>Listing quests</h1>
+
+<table border=1>
+  <tr>
+    <th style="width:400px">Content</th>
+    <th style="width:100px">Item</th>
+    <th style="width:30px">Purpose type</th>
+    <th style="width:100px">Purpose</th>
+    <th style="width:100px">Place</th>
+    <th style="width:30px">Ongoing</th>
+    <th style="width:100px">Begin</th>
+    <th style="width:100px">End</th>
+    <th style="width:50px"></th>
+    <th style="width:50px"></th>
+    <th style="width:50px"></th>
+  </tr>
+
+<% @quests.each do |quest| %>
+  <tr>
+    <td><%= quest.content %></td>
+    <td style="text-align:center"><%= quest.item %></td>
+    <td style="text-align:center"><%= quest.purpose_type %></td>
+    <td style="text-align:center"><%= quest.purpose %></td>
+    <td style="text-align:center"><%= quest.place %></td>
+    <td style="text-align:center; color:<%=quest.ongoing ? "#3333ff":"#ff3333"%>; font-weight:<%=quest.ongoing ? "bold":"normal"%>"><%= quest.ongoing %></td>
+    <td style="text-align:center; color:#c0c0c0"><%= quest.begin %></td>
+    <td style="text-align:center; color:#c0c0c0""><%= quest.end %></td>
+    <td style="text-align:center"><%= link_to 'Show', quest %></td>
+    <td style="text-align:center"><%= link_to 'Edit', edit_quest_path(quest) %></td>
+    <td style="text-align:center"><%= link_to 'Destroy', quest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Quest', new_quest_path %>

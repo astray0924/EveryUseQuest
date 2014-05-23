@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @quest.content %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%= @quest.item %>
+</p>
+
+<p>
+  <b>Purpose type:</b>
+  <%= @quest.purpose_type %>
+</p>
+
+<p>
+  <b>Purpose:</b>
+  <%= @quest.purpose %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @quest.place %>
+</p>
+
+<p>
+  <b>Ongoing:</b>
+  <%= @quest.ongoing %>
+</p>
+
+<p>
+  <b>Begin:</b>
+  <%= @quest.begin %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%= @quest.end %>
+</p>
+
+
+<%= link_to 'Edit', edit_quest_path(@quest) %> |
+<%= link_to 'Back', quests_path %>
